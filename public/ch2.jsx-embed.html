@@ -8,9 +8,10 @@
 
 <div id="root">l</div>
 
-<script type="text/babel">
-  ReactDOM.render(
-    <h1>Hello, World!</h1>,
-    document.getElementById('root')
-  )
+<script type='text/babel'>
+const item = 'SDカード'
+const value = 1200
+const msg = <h1>{item} - {value}円</h1>
+const elm = document.getElementById('root')
+ReactDOM.render(msg, elm)
 </script>

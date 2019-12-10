@@ -8,9 +8,14 @@
 
 <div id="root">l</div>
 
-<script type="text/babel">
-  ReactDOM.render(
-    <h1>Hello, World!</h1>,
-    document.getElementById('root')
-  )
+<script type='text/babel'>
+const title = '書道'
+const imgUrl = 'http://uta.pw/shodou/img/28/214.png'
+const msg =
+  <div>
+  <h1>{title}</h1>
+  <p><img src ={imgUrl} /></p>
+  </div>
+const elm = document.getElementById('root')
+ReactDOM.render(msg, elm)
 </script>
