@@ -17,11 +17,9 @@ const getCurrentTime = (d, sep) =>
   ]
   .map(v => v.toString().padStart(2, '0')))
   .join(sep)
-
 const showClock = () => ReactDOM.render(
 getCurrentTime(new Date(), ':'),
 document.getElementById('root')
 )
-
 setInterval(showClock, 1000)
 </script>
